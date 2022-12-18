@@ -37,7 +37,7 @@ const GrammerCorrection = () => {
   console.log(wrongFormat);
 
   return (
-    <div className="grid items-center content-center">
+    <div className="grid gap-4 items-center content-center p-4">
       <h2 className="text-center text-2xl p-2">Grammar Correction</h2>
       <textarea
         className="p-2 text-center"
@@ -47,7 +47,7 @@ const GrammerCorrection = () => {
         cols="10"
         rows="10"
       ></textarea>
-      <button className="btn text-white" onClick={handleClick}>
+      <button className="btn text-white mx-4" onClick={handleClick}>
         let's go!
       </button>
       <p className="text-center text-white">{rightFormat}</p>
