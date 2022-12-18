@@ -34,23 +34,31 @@ const GrammerCorrection = () => {
     getResponse();
   };
 
-  console.log(wrongFormat);
 
   return (
-    <div className="grid gap-4 items-center content-center p-4">
+    <div className="grid gap-4 items-center content-center p-4 mb-auto">
       <h2 className="text-center text-2xl p-2">Grammar Correction</h2>
       <textarea
-        className="p-2 text-center"
+        className="p-2 text-center rounded-2xl"
+        placeholder="type wrong sentenses here!"
         onChange={handleChange}
         name="wrong-text"
         id="wrong-text"
         cols="10"
-        rows="10"
+        rows="5"
       ></textarea>
       <button className="btn text-white mx-4" onClick={handleClick}>
         let's go!
       </button>
-      <p className="text-center text-white">{rightFormat}</p>
+      <textarea
+        disabled
+        className="p-2 text-center rounded-2xl"
+        placeholder="right sentenses will appear here!"
+        defaultValue={rightFormat}
+        cols="10"
+        rows="5"
+      ></textarea>
+      {/* <p className="text-center text-white">{rightFormat}</p> */}
     </div>
   );
 };
