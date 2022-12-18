@@ -37,17 +37,20 @@ const GrammerCorrection = () => {
   console.log(wrongFormat);
 
   return (
-    <div className="center">
-      <h2>Grammar Correction</h2>
+    <div className="grid items-center content-center">
+      <h2 className="text-center text-2xl p-2">Grammar Correction</h2>
       <textarea
+        className="p-2 text-center"
         onChange={handleChange}
         name="wrong-text"
         id="wrong-text"
-        cols="30"
+        cols="10"
         rows="10"
       ></textarea>
-      <button className="btn" onClick={handleClick}>click here</button>
-      <p>{rightFormat}</p>
+      <button className="btn text-white" onClick={handleClick}>
+        let's go!
+      </button>
+      <p className="text-center text-white">{rightFormat}</p>
     </div>
   );
 };
