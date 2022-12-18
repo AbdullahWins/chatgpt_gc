@@ -34,9 +34,8 @@ const GrammerCorrection = () => {
     getResponse();
   };
 
-
   return (
-    <div className="grid gap-4 items-center content-center p-4 mb-auto">
+    <div className="grid gap-4 items-center content-center p-4">
       <h2 className="text-center text-2xl p-2">Grammar Correction</h2>
       <textarea
         className="p-2 text-center rounded-2xl"

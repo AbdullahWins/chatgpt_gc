@@ -4,7 +4,7 @@ import GrammerCorrection from "./components/GrammerCorrection/GrammerCorrection"
 
 function App() {
   return (
-    <div className="h-screen">
+    <div className="flex flex-col min-h-screen">
       <GrammerCorrection></GrammerCorrection>
       <Footer></Footer>
     </div>
